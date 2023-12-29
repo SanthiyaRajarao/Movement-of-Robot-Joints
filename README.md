@@ -13,44 +13,35 @@ Visual Components Premium 4.3
 3. 	In the script editor, add the code and then compile the code.
 
 ## Program
-```python
-
-
-
-
-
-
+```
+Developed By:SANTHIYA R
+Referrence Number : 212223230192
+from vcScript import *
+from vcHelpers.Robot2 import *
+def OnRun():
+  pos=[[1,30],[2,40],[3,90]]
+  robot = getRobot()
+  robot.driveJoints(0,0,0,0,0,0)
+  delay(5)
+  for i in pos:
+    robot.Controller.moveJoint(i[0],i[1])
+    delay(5)
 ```
 ## Output
 ### 1. Generic Articulated Robot
-</br>
-</br>
-</br>
-</br>
+![output](image.png)
 
 ### 2. robot.driveJoints(0,0,0,0,0,0)
-</br>
-</br>
-</br>
-</br>
+![output](image-1.png)
 
 ### 3. Movement of Joint1
-</br>
-</br>
-</br>
-</br>
+![output](image-2.png)
 
-### 3. Movement of Joint2
-</br>
-</br>
-</br>
-</br>
+### 4. Movement of Joint2
+![output](image-3.png)
 
-### 3. Movement of Joint3
-</br>
-</br>
-</br>
-</br>
+### 5. Movement of Joint3
+![output](image-4.png)
 
 ## Result 
 Thus the different robots joints are moved with the help of python list.
